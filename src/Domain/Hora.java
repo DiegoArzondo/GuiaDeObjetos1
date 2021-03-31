@@ -69,7 +69,7 @@ import java.util.Scanner;
         }
 
 
-        public Domain.Hora avanzarUnSegundo(Domain.Hora hora){
+        public Hora avanzarUnSegundo(Hora hora){
             if(hora.hora==23 && hora.minuto==59 && hora.segundo==59){
                 this.hora=0;
                 this.minuto=0;
@@ -90,6 +90,26 @@ import java.util.Scanner;
             return hora;
         }
 
+        public Hora retrasarSegundo(Hora hora){
+            if (hora.hora==0 && hora.minuto==0 && hora.segundo==0){
+                this.hora=23;
+                this.minuto=59;
+                this.segundo=59;
+            }
+            else if (hora.minuto== 0 && hora.segundo==0){
+                this.hora--;
+                this.minuto=59;
+                this.segundo=59;
+            }
+            else if(hora.segundo==00){
+                this.minuto--;
+                this.segundo=59;
+            }
+            else{
+                this.segundo--;
+            }
+            return hora;
+        }
 
     }
 

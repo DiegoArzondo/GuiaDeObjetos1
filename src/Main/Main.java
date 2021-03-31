@@ -6,7 +6,7 @@ public class Main {
 
         //ENUNCIADO1
 
-        Rectangulo nuevo = new Rectangulo();
+        /*Rectangulo nuevo = new Rectangulo();
         System.out.println(nuevo);
         System.out.println("Area: " + nuevo.calcularArea());
         System.out.println("Perimetro: " + nuevo.calcularPerimetro());
@@ -40,14 +40,16 @@ public class Main {
         cuenta.debito(1500);
         System.out.println(cuenta);
         cuenta.debito(30000);
-        System.out.println(cuenta);
+        System.out.println(cuenta);*/
 
         //ENUNCIADO 5
 
         Hora reloj= new Hora();
         reloj.iniciarReloj();
         System.out.println(reloj);
-        reloj.avanzarUnSegundo(reloj);
+        //reloj.avanzarUnSegundo(reloj);
+        //System.out.println(reloj);
+        reloj.retrasarSegundo(reloj);
         System.out.println(reloj);
     }
 }
